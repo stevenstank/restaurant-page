@@ -28,10 +28,18 @@ export default function loadHome() {
     <p>Saturday – Sunday: 9am – 11pm</p>
   `;
 
+  const saksham = document.createElement("footer");
+  saksham.classList.add("saksham");
+  saksham.innerHTML = `<footer>
+            made with <span class="heart">♥</span> by <a class="footer-link" href="https://github.com/stevenstank/" target="_blank" rel="noopener noreferrer">stevenstank</a>
+        </footer>`;
+
   hero.appendChild(h1);
   hero.appendChild(tagline);
   container.appendChild(hero);
   container.appendChild(description);
   container.appendChild(hours);
+  container.appendChild(saksham);
   content.appendChild(container);
+
 }
